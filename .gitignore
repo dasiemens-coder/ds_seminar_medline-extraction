@@ -1,7 +1,8 @@
 # Created by venv; see https://docs.python.org/3/library/venv.html
 /.venv
 .env
-/input
+input/mplus_topics_2012-06-01.dtd
+input/mplus_topics_2025-03-04.xml
 output/diseases_and_symptoms_v1.json
 output/diseases_and_symptoms_v2.json
 output/diseases_and_symptoms.json

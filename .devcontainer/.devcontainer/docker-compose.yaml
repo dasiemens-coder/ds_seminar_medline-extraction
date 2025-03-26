@@ -1,0 +1,9 @@
+version: '3'
+services:
+  spark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/home/jovyan/code
+    command: start.sh jupyter notebook --NotebookApp.token='' --NotebookApp.disable_check_xsrf=true --NotebookApp.allow_origin='*' --NotebookApp.ip='0.0.0.0'

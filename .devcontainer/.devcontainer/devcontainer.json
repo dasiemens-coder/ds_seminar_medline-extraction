@@ -1,0 +1,33 @@
+{
+	"name": "PySpark local cluster",
+	"dockerComposeFile": ["./docker-compose.yaml"],
+    "service": "spark",
+    "workspaceFolder": "/home/jovyan/code",
+    
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": { 
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"python.linting.enabled": true,
+				"python.linting.pylintEnabled": true,
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash"
+                    }
+                },
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "ms-python.python",
+				"ms-python.vscode-pylance",
+		        "ms-toolsai.jupyter"
+            ]
+        }
+    },
+
+    "forwardPorts": [8888, 4040, 4041],
+    "remoteUser": "jovyan"
+}

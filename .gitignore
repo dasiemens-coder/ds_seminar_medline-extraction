@@ -9,3 +9,4 @@ output/diseases_and_symptoms.json
 umls_metathesaurus/MRCONSO.RRF
 umls_metathesaurus/MRSTY.RRF
 scispacy_env
+output/medline_extraction_final_version.xlsx
